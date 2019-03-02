@@ -4,10 +4,6 @@ import sys
 
 
 characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_!@#$%^&*()_+"
-non_binary_check = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ23456789-_!@#$%^&*()_+"
-
-
-same_character_check = ""
 
 def binary_check(binary_code):
 	check = set(binary_code)
@@ -23,6 +19,7 @@ def randomCharacter():
 	return characters[math.floor(rand.random() * len(characters))] 
 
 def create_seeds():
+	same_character_check = ""
 	
 	binary_code = input("Binary to random AND: ")
 
